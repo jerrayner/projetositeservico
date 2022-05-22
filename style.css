@@ -6,6 +6,7 @@
 body {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  
 }
 header {
   height: 100px;
@@ -131,6 +132,19 @@ background-color: rgba(7, 11, 74, 0.2);
 .banner .pointer.active {
 background-color: #890b0b;
 }
+.button1 {
+  display: inline-block;
+  background-color: #890b0b;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+  
+}
 .button {
   display: inline-block;
   background-color: #890b0b;
@@ -142,6 +156,7 @@ background-color: #890b0b;
   padding: 10px 30px;
   margin-top: 30px;
   border-radius: 20px;
+  
 }
 
 .default {
@@ -149,7 +164,7 @@ background-color: #890b0b;
 width: 100vw;
 padding-top: 50px;
 padding-bottom: 50px;
-background-color: rgba(7, 11, 74, 0.2);
+
 }
 .default .section-title,
 .default .section-desc {
@@ -193,7 +208,7 @@ flex:1;
 .section-aboutusLeft p {
   font-size: 15px;
   line-height: 22px;
-  text-align: center;
+  text-align: justify;
 
   }
   .section-aboutusLeft .button {
@@ -240,7 +255,8 @@ hr {
 .localization {
   background-image: url('mapa.png');
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 70px;
+  display: flex;
 }
 .section-map {
 width: 100vw;
@@ -253,10 +269,11 @@ margin: auto;
     padding:30px;
     background-color:#890b0b;
     border-radius: 14px;
-    align-items: center;
+    align-items: flex-start;
     color:#CCC;
-    left: 30px;
+    flex:1;
     font-size: 15px;
+    
   }
   
   .section-mapInfo-item img {
@@ -281,15 +298,25 @@ margin: auto;
   .contact {
     max-width: 600px;
     margin: auto;
+    
   }
-  
+  .contact h1 {
+    margin-bottom: 20px;
+    margin-top: 23px;
+    font-size: 20px;
+    font-weight: 600;
+  }
   .contact form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  #contactus {
+    margin-bottom: 30px;
+  }
   
-  .contact .inputs {
+  .contact .inputs,
+  #mensagem {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -297,12 +324,13 @@ margin: auto;
   }
   
   .contact input[placeholder="Name"],
-  .contact input[placeholder="Email"] {
+  .contact input[placeholder="Email"]
+{
     width: 285px;
   }
   
   .contact input[placeholder="Subject"],
-  .contact input[placeholder="Message"] {
+  #mensagem[placeholder="Descreva os serviços desejados.."] {
     width: 100%;
   }
   
@@ -310,7 +338,8 @@ margin: auto;
     margin-right: 30px;
   }
   
-  .contact input {
+  .contact input,
+  #mensagem {
     padding: 10px 2px;
     border: none;
     border-bottom: 2px solid #bbb;
@@ -320,16 +349,93 @@ margin: auto;
   }
   
   .contact input:hover,
-  .contact input:focus {
+  .contact input:focus,
+  #mensagem:focus,
+  #mensagem:hover {
     border-bottom: 2px solid #890b0b;
   }
   
-  .contact input::placeholder {
-    font-size: 11px;
+  .contact input::placeholder,
+  #mensagem {
+    font-size: 16px;
     text-transform: uppercase;
     color: #999;
   }
   
-  .contact input[placeholder="Message"] {
+  #mensagem {
+    font-size: 16px;
+    
+  }
+  
+  #mensagem[placeholder="Descreva os serviços desejados.."] {
     margin-top: 40px;
+    width: 600px;
+    height: 300px;
+    border-left: 2px solid #bbb; ;
+    border-right: 2px solid #bbb; ;
   } 
+  #enviar {
+    margin-top: -15px;
+    margin-bottom: 30px;
+    border: none;
+  }
+  input,
+  #mensagem {
+     color: rgb(131, 131, 131);
+     font-size: 16px;
+   }
+   footer {
+    display: flex;
+    width: 100vw;
+    height: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #070B4A;
+    color:#FFF;
+   }
+   .logo-footer {
+     background-image:url('logo.png');
+     background-size:contain;
+     width: 160px;
+   }
+   .footerLogo-Desc {
+     position: absolute;
+     margin-top: 150px;
+    font-size: 12px;
+     text-align: center;
+     text-transform: uppercase;
+     font-weight: 600;
+     left: 10px;
+   }
+   .footerInfo {
+    display: flex;
+    flex-direction: row;
+    flex:1;
+    justify-content: space-around;
+  }
+   .endereco {
+     
+     text-align: center;
+     width: 200px;
+   }
+   .payment {
+   
+    text-align: center;
+    width: 200px;
+   }
+   .phones {
+   text-align: center;
+   width: 200px;
+   }
+   .copyrightInfo {
+    display: flex;
+   }
+   .copyright {
+     position: absolute;
+     bottom: 6px;
+     box-sizing: content-box;
+   }
+   .footerInfo {
+     display: flex;
+     flex-direction: row;
+   }
