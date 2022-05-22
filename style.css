@@ -1,0 +1,335 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+header {
+  height: 100px;
+  background-color: #070B4A;
+  color: #FFF;
+}
+.header {
+  max-width: 1140px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100px;
+}
+.menu {
+  flex:1;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo-menu {
+  width: 110px;
+ 
+}
+.menu ul,
+.menu li {
+  list-style: none;
+}
+.menu ul {
+  display: flex;
+}
+.menu li a {
+  display: flex;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100px;
+  align-items: center;
+  border-bottom: 5px solid #070B4A;
+  font-size: 18px;
+}
+.menu li a:hover,
+.menu .active a {
+  border-bottom: 6px solid #890b0b;
+  color: #CCC;
+}
+.banner {
+  height: calc(100vh - 100px);
+  background-color: #890b0b;
+  background-image: url('goiania-6833825.jpg');
+  background-size: cover;
+  background-position: bottom;
+  overflow: hidden;
+}
+.banner .sliders {
+  width: 1000vw;
+  height: 100%;
+ 
+}
+.banner .slide {
+width: 100vw;
+height: 100%;
+display: inline-block;
+background-color: rgba(7, 11, 74, 0.2);
+}
+.banner .slideArea {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+}
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 50px;
+  text-shadow: #000 2px 3px 5px;
+  
+}
+.banner h1 span {
+  color:#890b0b;
+}
+.banner h2 {
+  text-shadow: #000 2px 3px 5px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.banner a {
+  display: block;
+  background-color: #890b0b;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+.banner .sliders-pointers {
+  width: 100vw;
+  height: 20px;
+  position: absolute;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .pointer {
+  width: 15px;
+  height: 15px;
+  border: 2px solid #890b0b;
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.banner .pointer.active {
+background-color: #890b0b;
+}
+.button {
+  display: inline-block;
+  background-color: #890b0b;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+.default {
+
+width: 100vw;
+padding-top: 50px;
+padding-bottom: 50px;
+background-color: rgba(7, 11, 74, 0.2);
+}
+.default .section-title,
+.default .section-desc {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.default .section-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.default .section-desc {
+  font-size: 13px;
+  color:rgb(87, 86, 86);
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+.default .section-body {
+  max-width: 1140px;
+  margin: auto;
+  min-height: 100px;
+  color:#000;
+  
+}
+
+.default.light .section-title,
+.default.light .section-body {
+  color: #000;
+  
+}
+
+
+/* CSS DE AREAS ESPECIFICAS */
+.aboutUs {
+  display: flex;
+}
+.section-aboutusLeft {
+flex:1;
+
+}
+.section-aboutusLeft p {
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+
+  }
+  .section-aboutusLeft .button {
+    position: absolute;
+   left: 600px;
+    }
+.section-aboutusRight {
+  width: 500px;
+  text-align: center;
+  
+}
+.section-aboutusRight img {
+  width: 70%;
+  box-shadow: 0px 5px 10px #333;
+  margin-left: 20px;
+  border-radius: 15px;
+  
+}
+.section-services {
+  display: flex;
+}
+.section-service {
+  margin-top: px;
+  flex:1;
+  text-align: center;
+  padding: 20px;
+}
+.section-services img {
+  width: 100px;
+}
+hr {
+	border-width: 0; 
+	height: 1px;
+	border-top-width: 1px;
+
+	}
+  .section-service p {
+    margin-top: 10px;
+  }
+  .section-service h4 {
+    color:#890b0b;
+    text-transform: uppercase;
+  } 
+.localization {
+  background-image: url('mapa.png');
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.section-map {
+width: 100vw;
+max-width: 1140px;
+margin: auto;
+}
+
+  .section-mapInfo {
+    width:75%;
+    padding:30px;
+    background-color:#890b0b;
+    border-radius: 14px;
+    align-items: center;
+    color:#CCC;
+    left: 30px;
+    font-size: 15px;
+  }
+  
+  .section-mapInfo-item img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+  }
+  .section-mapInfo-item a {
+    text-decoration: none;
+    color:#CCC;
+  }
+  .section-mapInfo-item a:hover {
+    text-decoration: underline;
+    color: #CCC;
+  }
+ 
+  /* area de contato */
+  .contact {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact .inputs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .contact input[placeholder="Name"],
+  .contact input[placeholder="Email"] {
+    width: 285px;
+  }
+  
+  .contact input[placeholder="Subject"],
+  .contact input[placeholder="Message"] {
+    width: 100%;
+  }
+  
+  .contact input:first-child {
+    margin-right: 30px;
+  }
+  
+  .contact input {
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 2px solid #bbb;
+    margin-bottom: 30px;
+    background: none;
+    outline: none;
+  }
+  
+  .contact input:hover,
+  .contact input:focus {
+    border-bottom: 2px solid #890b0b;
+  }
+  
+  .contact input::placeholder {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #999;
+  }
+  
+  .contact input[placeholder="Message"] {
+    margin-top: 40px;
+  } 
