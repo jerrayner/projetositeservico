@@ -298,11 +298,11 @@ hr {
 
 
 /* sessão da localização */
-.localization {
-  background-image: url('../images/mapa.png');
-  padding-top: 30px;
-  padding-bottom: 70px;
-  display: flex;
+#mapa {
+  height:600px;
+  width:600px;
+  position: absolute;
+  visibility: visible;
 }
 
 .section-map {
